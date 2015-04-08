@@ -26,6 +26,7 @@ imap <F8> <Esc><F8>
 vmap <F8> :s///g<Left><Left><Left>
 map <F10> :x<Enter>
 imap <F10> <Esc><F10><Enter>
+map <F12> :NERDTreeToggle<Enter>
 
 filetype plugin indent on
 
