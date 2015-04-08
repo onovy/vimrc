@@ -1,3 +1,4 @@
+set nocompatible
 set expandtab
 set softtabstop=4
 set tabstop=4
