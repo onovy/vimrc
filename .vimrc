@@ -28,6 +28,7 @@ map <F10> :x<Enter>
 imap <F10> <Esc><F10><Enter>
 map <F12> :NERDTreeToggle<Enter>
 imap <F12> <Esc><F12>
+map ; :
 
 filetype plugin indent on
 
