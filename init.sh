@@ -1,7 +1,11 @@
 #!/bin/bash
 
+realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 # .vimrc
-ln -s "$(readlink -e .vimrc)" ~/.vimrc
+ln -s "$(realpath .vimrc)" ~/.vimrc
 
 # .vim
 mkdir ~/.vim
