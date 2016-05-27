@@ -7,6 +7,10 @@ set number
 set ai
 set hlsearch
 set laststatus=2
+let debian_sign =$DEBFULLNAME
+let debian_sign.=' <'
+let debian_sign.=$DEBEMAIL
+let debian_sign.='>'
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -24,6 +28,8 @@ imap <F7> <Esc><F7>
 map <F8> :%s///g<Left><Left><Left>
 imap <F8> <Esc><F8>
 vmap <F8> :s///g<Left><Left><Left>
+map <F9> i<F9>
+imap <F9> <c-r>=debian_sign<Enter>
 map <F10> :x<Enter>
 imap <F10> <Esc><F10><Enter>
 map <F12> :NERDTreeToggle<Enter>
